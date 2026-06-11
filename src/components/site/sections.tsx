@@ -350,6 +350,7 @@ export function MenuSection() {
                     <span className="text-sm gold-text font-semibold">{m.jp}</span>
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{m.desc}</p>
+                  <p className="mt-1 text-sm text-muted-foreground/80">{m.descJp}</p>
                 </div>
               </article>
             );

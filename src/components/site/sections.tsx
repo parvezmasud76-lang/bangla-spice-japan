@@ -14,7 +14,8 @@ import naan from "@/assets/naan.jpg";
 import jalebi from "@/assets/jalebi.jpg";
 import drinks from "@/assets/drinks.jpg";
 import grocery from "@/assets/grocery.jpg";
-import restaurant from "@/assets/restaurant.jpg";
+import restaurantAsset from "@/assets/restaurant-spread.jpg.asset.json";
+const restaurant = restaurantAsset.url;
 import event from "@/assets/event.jpg";
 import cateringImg from "@/assets/catering.jpg";
 

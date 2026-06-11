@@ -225,7 +225,7 @@ export function Locations() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Our Branches</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">店舗案内 · Locations</h2>
-          <p className="mt-4 text-muted-foreground">Two branches across Gifu &amp; Aichi. Tap to call, navigate, or order online.</p>
+          <p className="mt-4 text-muted-foreground">Two branches across Gifu &amp; Aichi. Tap to call, navigate, or order online.<br /><span className="text-sm">岐阜・愛知に2店舗。タップでお電話・地図・オンライン注文ができます。</span></p>
         </div>
 
         <div className="mt-14 grid lg:grid-cols-2 gap-8">

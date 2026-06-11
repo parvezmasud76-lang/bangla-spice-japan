@@ -168,7 +168,7 @@ export function Services() {
                   </div>
                 </div>
                 <p className="mt-4 text-sm text-white/70">{desc}</p>
-                <p className="mt-2 text-sm text-white/60">{(services.find(s => s.title === title) as { descJp: string }).descJp}</p>
+                <p className="mt-2 text-sm text-white/60">{descJp}</p>
               </div>
             </article>
           ))}

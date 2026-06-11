@@ -130,11 +130,11 @@ export function About() {
 
 /* ---------------- SERVICES ---------------- */
 const services = [
-  { icon: UtensilsCrossed, title: "Restaurant Dining", jp: "店舗ダイニング", desc: "Warm interiors, freshly cooked tandoor specialties.", img: restaurant },
-  { icon: Package, title: "Takeout", jp: "テイクアウト", desc: "Order ahead by phone or Uber Eats for fast pickup.", img: curry },
-  { icon: ChefHat, title: "Catering", jp: "ケータリング", desc: "Buffets for companies, schools and weddings.", img: cateringImg },
-  { icon: CalendarHeart, title: "Event Sales", jp: "イベント出店", desc: "Festivals, matsuri and cultural events nationwide.", img: event },
-  { icon: ShoppingBag, title: "Halal Grocery", jp: "ハラール食材", desc: "Imported spices, rice, lentils and halal meats.", img: grocery },
+  { icon: UtensilsCrossed, title: "Restaurant Dining", jp: "店舗ダイニング", desc: "Warm interiors, freshly cooked tandoor specialties.", descJp: "温かみのある店内で、焼きたてのタンドール料理をどうぞ。", img: restaurant },
+  { icon: Package, title: "Takeout", jp: "テイクアウト", desc: "Order ahead by phone or Uber Eats for fast pickup.", descJp: "お電話またはUber Eatsで事前注文、スピーディーにお持ち帰り。", img: curry },
+  { icon: ChefHat, title: "Catering", jp: "ケータリング", desc: "Buffets for companies, schools and weddings.", descJp: "企業・学校・結婚式向けのビュッフェに対応します。", img: cateringImg },
+  { icon: CalendarHeart, title: "Event Sales", jp: "イベント出店", desc: "Festivals, matsuri and cultural events nationwide.", descJp: "全国のお祭り・文化イベントに出店いたします。", img: event },
+  { icon: ShoppingBag, title: "Halal Grocery", jp: "ハラール食材", desc: "Imported spices, rice, lentils and halal meats.", descJp: "輸入スパイス・お米・豆類・ハラールミートを販売。", img: grocery },
 ];
 export function Services() {
   return (

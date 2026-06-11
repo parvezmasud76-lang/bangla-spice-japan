@@ -144,6 +144,7 @@ export function Services() {
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.85_0.14_85)]">Our Services</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl">What we offer</h2>
           <p className="mt-4 text-white/70">From a quiet dinner to a 300-guest catering — we handle it all, fully halal.</p>
+          <p className="mt-2 text-white/60 text-sm">少人数のお食事から300名規模のケータリングまで、すべて100％ハラールで対応いたします。</p>
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">

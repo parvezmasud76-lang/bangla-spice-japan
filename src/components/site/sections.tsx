@@ -311,7 +311,7 @@ export function MenuSection() {
           <div>
             <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Menu</span>
             <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">メニュー</h2>
-            <p className="mt-4 max-w-xl text-muted-foreground">A handcrafted selection of the most loved Indian & Bangladeshi dishes.</p>
+            <p className="mt-4 max-w-xl text-muted-foreground">A handcrafted selection of the most loved Indian & Bangladeshi dishes.<br /><span className="text-sm">人気のインド・バングラデシュ料理を、心を込めて手作りでご提供します。</span></p>
           </div>
           <div className="flex flex-wrap gap-2">
             {menu.map((m) => (

@@ -445,6 +445,10 @@ export function Grocery() {
             Imported spices, basmati rice, lentils, frozen halal meats, paneer, snacks, sweets,
             and ready-to-cook sauces — sourced directly from India and Bangladesh.
           </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            輸入スパイス、バスマティライス、豆類、冷凍ハラールミート、パニール、スナック、お菓子、
+            ソース類などをインド・バングラデシュから直輸入しています。
+          </p>
           <div className="mt-6 grid grid-cols-2 gap-3 max-w-md">
             {["Spices & Masala", "Basmati Rice", "Halal Meat", "Lentils & Beans", "Snacks & Sweets", "Frozen Items"].map((t) => (
               <span key={t} className="rounded-xl bg-secondary px-4 py-3 text-sm font-medium">{t}</span>

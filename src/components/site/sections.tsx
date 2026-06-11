@@ -113,9 +113,15 @@ export function About() {
             Indian and Bangladeshi halal cuisine, takeout, catering services, event sales
             and halal grocery products.
           </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            <strong className="text-foreground">バングラキッチン</strong>は<strong className="text-foreground">SPICIA合同会社</strong>が運営する、本格インド・バングラデシュ料理のハラールレストランです。店内飲食・テイクアウト・ケータリング・イベント出店・ハラール食材販売まで幅広く対応しております。
+          </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Most of our customers are local Japanese families and international residents
             who love our hand-ground spices, tandoor-baked breads, and slow-cooked curries.
+          </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            地元の日本人ファミリーや在住外国人のお客様に、手挽きスパイス、タンドール窯で焼いたパン、じっくり煮込んだカレーをお楽しみいただいております。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {["Halal Certified", "Tandoor Oven", "Hand-Ground Spices", "Family Friendly"].map((t) => (
@@ -130,11 +136,11 @@ export function About() {
 
 /* ---------------- SERVICES ---------------- */
 const services = [
-  { icon: UtensilsCrossed, title: "Restaurant Dining", jp: "店舗ダイニング", desc: "Warm interiors, freshly cooked tandoor specialties.", img: restaurant },
-  { icon: Package, title: "Takeout", jp: "テイクアウト", desc: "Order ahead by phone or Uber Eats for fast pickup.", img: curry },
-  { icon: ChefHat, title: "Catering", jp: "ケータリング", desc: "Buffets for companies, schools and weddings.", img: cateringImg },
-  { icon: CalendarHeart, title: "Event Sales", jp: "イベント出店", desc: "Festivals, matsuri and cultural events nationwide.", img: event },
-  { icon: ShoppingBag, title: "Halal Grocery", jp: "ハラール食材", desc: "Imported spices, rice, lentils and halal meats.", img: grocery },
+  { icon: UtensilsCrossed, title: "Restaurant Dining", jp: "店舗ダイニング", desc: "Warm interiors, freshly cooked tandoor specialties.", descJp: "温かみのある店内で、焼きたてのタンドール料理をどうぞ。", img: restaurant },
+  { icon: Package, title: "Takeout", jp: "テイクアウト", desc: "Order ahead by phone or Uber Eats for fast pickup.", descJp: "お電話またはUber Eatsで事前注文、スピーディーにお持ち帰り。", img: curry },
+  { icon: ChefHat, title: "Catering", jp: "ケータリング", desc: "Buffets for companies, schools and weddings.", descJp: "企業・学校・結婚式向けのビュッフェに対応します。", img: cateringImg },
+  { icon: CalendarHeart, title: "Event Sales", jp: "イベント出店", desc: "Festivals, matsuri and cultural events nationwide.", descJp: "全国のお祭り・文化イベントに出店いたします。", img: event },
+  { icon: ShoppingBag, title: "Halal Grocery", jp: "ハラール食材", desc: "Imported spices, rice, lentils and halal meats.", descJp: "輸入スパイス・お米・豆類・ハラールミートを販売。", img: grocery },
 ];
 export function Services() {
   return (
@@ -144,10 +150,11 @@ export function Services() {
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.85_0.14_85)]">Our Services</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl">What we offer</h2>
           <p className="mt-4 text-white/70">From a quiet dinner to a 300-guest catering — we handle it all, fully halal.</p>
+          <p className="mt-2 text-white/60 text-sm">少人数のお食事から300名規模のケータリングまで、すべて100％ハラールで対応いたします。</p>
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map(({ icon: Icon, title, jp, desc, img }, i) => (
+          {services.map(({ icon: Icon, title, jp, desc, descJp, img }, i) => (
             <article
               key={title}
               className={`group relative overflow-hidden rounded-2xl gold-border bg-white/[0.03] backdrop-blur transition-all hover:bg-white/[0.06] ${i === 0 ? "lg:row-span-2 lg:col-span-1" : ""}`}
@@ -167,6 +174,7 @@ export function Services() {
                   </div>
                 </div>
                 <p className="mt-4 text-sm text-white/70">{desc}</p>
+                <p className="mt-2 text-sm text-white/60">{descJp}</p>
               </div>
             </article>
           ))}
@@ -223,7 +231,7 @@ export function Locations() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Our Branches</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">店舗案内 · Locations</h2>
-          <p className="mt-4 text-muted-foreground">Two branches across Gifu &amp; Aichi. Tap to call, navigate, or order online.</p>
+          <p className="mt-4 text-muted-foreground">Two branches across Gifu &amp; Aichi. Tap to call, navigate, or order online.<br /><span className="text-sm">岐阜・愛知に2店舗。タップでお電話・地図・オンライン注文ができます。</span></p>
         </div>
 
         <div className="mt-14 grid lg:grid-cols-2 gap-8">
@@ -291,13 +299,13 @@ export function Locations() {
 
 /* ---------------- MENU ---------------- */
 const menu = [
-  { key: "Curry", jp: "カレー", img: curry, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices." },
-  { key: "Biryani", jp: "ビリヤニ", img: biryani, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi." },
-  { key: "Naan", jp: "ナン", img: naan, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese." },
-  { key: "Tandoori", jp: "タンドリー", img: tandoori, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor." },
-  { key: "Samosa", jp: "サモサ", img: samosa, desc: "Crispy pastry stuffed with spiced potato, served with chutneys." },
-  { key: "Jalebi", jp: "ジャレビ", img: jalebi, desc: "Crisp golden swirls soaked in fragrant saffron-cardamom syrup." },
-  { key: "Drinks", jp: "ドリンク", img: drinks, desc: "Mango lassi, masala chai, fresh juices & soft drinks." },
+  { key: "Curry", jp: "カレー", img: curry, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
+  { key: "Biryani", jp: "ビリヤニ", img: biryani, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
+  { key: "Naan", jp: "ナン", img: naan, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
+  { key: "Tandoori", jp: "タンドリー", img: tandoori, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
+  { key: "Samosa", jp: "サモサ", img: samosa, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
+  { key: "Jalebi", jp: "ジャレビ", img: jalebi, desc: "Crisp golden swirls soaked in fragrant saffron-cardamom syrup.", descJp: "サフランとカルダモンのシロップに浸した、黄金色の伝統スイーツ。" },
+  { key: "Drinks", jp: "ドリンク", img: drinks, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
 ];
 
 export function MenuSection() {
@@ -309,7 +317,7 @@ export function MenuSection() {
           <div>
             <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Menu</span>
             <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">メニュー</h2>
-            <p className="mt-4 max-w-xl text-muted-foreground">A handcrafted selection of the most loved Indian & Bangladeshi dishes.</p>
+            <p className="mt-4 max-w-xl text-muted-foreground">A handcrafted selection of the most loved Indian & Bangladeshi dishes.<br /><span className="text-sm">人気のインド・バングラデシュ料理を、心を込めて手作りでご提供します。</span></p>
           </div>
           <div className="flex flex-wrap gap-2">
             {menu.map((m) => (
@@ -348,6 +356,7 @@ export function MenuSection() {
                     <span className="text-sm gold-text font-semibold">{m.jp}</span>
                   </div>
                   <p className="mt-2 text-sm text-muted-foreground">{m.desc}</p>
+                  <p className="mt-1 text-sm text-muted-foreground/80">{m.descJp}</p>
                 </div>
               </article>
             );
@@ -376,7 +385,7 @@ export function Gallery() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Gallery</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">ギャラリー</h2>
-          <p className="mt-4 text-muted-foreground">From kitchen flames to festival nights.</p>
+          <p className="mt-4 text-muted-foreground">From kitchen flames to festival nights.<br /><span className="text-sm">厨房の炎から、お祭りの夜まで。</span></p>
         </div>
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {gallery.map((g, i) => (
@@ -442,6 +451,10 @@ export function Grocery() {
             Imported spices, basmati rice, lentils, frozen halal meats, paneer, snacks, sweets,
             and ready-to-cook sauces — sourced directly from India and Bangladesh.
           </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            輸入スパイス、バスマティライス、豆類、冷凍ハラールミート、パニール、スナック、お菓子、
+            ソース類などをインド・バングラデシュから直輸入しています。
+          </p>
           <div className="mt-6 grid grid-cols-2 gap-3 max-w-md">
             {["Spices & Masala", "Basmati Rice", "Halal Meat", "Lentils & Beans", "Snacks & Sweets", "Frozen Items"].map((t) => (
               <span key={t} className="rounded-xl bg-secondary px-4 py-3 text-sm font-medium">{t}</span>
@@ -478,7 +491,7 @@ export function Contact() {
         <div className="lg:col-span-2">
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Contact</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">お問い合わせ</h2>
-          <p className="mt-4 text-muted-foreground">Reservations, catering, grocery orders or anything else — we'd love to hear from you.</p>
+          <p className="mt-4 text-muted-foreground">Reservations, catering, grocery orders or anything else — we'd love to hear from you.<br /><span className="text-sm">ご予約、ケータリング、食材のご注文など、お気軽にお問い合わせください。</span></p>
 
           <div className="mt-8 space-y-4">
             <a href="tel:0582403113" className="flex items-center gap-3 rounded-2xl bg-card p-4 ring-1 ring-border hover:ring-[oklch(0.78_0.13_85)] transition">

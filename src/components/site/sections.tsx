@@ -485,7 +485,7 @@ export function Contact() {
         <div className="lg:col-span-2">
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Contact</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">お問い合わせ</h2>
-          <p className="mt-4 text-muted-foreground">Reservations, catering, grocery orders or anything else — we'd love to hear from you.</p>
+          <p className="mt-4 text-muted-foreground">Reservations, catering, grocery orders or anything else — we'd love to hear from you.<br /><span className="text-sm">ご予約、ケータリング、食材のご注文など、お気軽にお問い合わせください。</span></p>
 
           <div className="mt-8 space-y-4">
             <a href="tel:0582403113" className="flex items-center gap-3 rounded-2xl bg-card p-4 ring-1 ring-border hover:ring-[oklch(0.78_0.13_85)] transition">

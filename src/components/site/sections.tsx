@@ -148,7 +148,7 @@ export function Services() {
         </div>
 
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map(({ icon: Icon, title, jp, desc, img }, i) => (
+          {services.map(({ icon: Icon, title, jp, desc, descJp, img }, i) => (
             <article
               key={title}
               className={`group relative overflow-hidden rounded-2xl gold-border bg-white/[0.03] backdrop-blur transition-all hover:bg-white/[0.06] ${i === 0 ? "lg:row-span-2 lg:col-span-1" : ""}`}

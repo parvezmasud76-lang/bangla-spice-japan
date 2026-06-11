@@ -113,9 +113,15 @@ export function About() {
             Indian and Bangladeshi halal cuisine, takeout, catering services, event sales
             and halal grocery products.
           </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            <strong className="text-foreground">バングラキッチン</strong>は<strong className="text-foreground">SPICIA合同会社</strong>が運営する、本格インド・バングラデシュ料理のハラールレストランです。店内飲食・テイクアウト・ケータリング・イベント出店・ハラール食材販売まで幅広く対応しております。
+          </p>
           <p className="mt-4 text-muted-foreground leading-relaxed">
             Most of our customers are local Japanese families and international residents
             who love our hand-ground spices, tandoor-baked breads, and slow-cooked curries.
+          </p>
+          <p className="mt-3 text-muted-foreground leading-relaxed">
+            地元の日本人ファミリーや在住外国人のお客様に、手挽きスパイス、タンドール窯で焼いたパン、じっくり煮込んだカレーをお楽しみいただいております。
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {["Halal Certified", "Tandoor Oven", "Hand-Ground Spices", "Family Friendly"].map((t) => (

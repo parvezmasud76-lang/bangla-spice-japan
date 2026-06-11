@@ -379,7 +379,7 @@ export function Gallery() {
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Gallery</span>
           <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">ギャラリー</h2>
-          <p className="mt-4 text-muted-foreground">From kitchen flames to festival nights.</p>
+          <p className="mt-4 text-muted-foreground">From kitchen flames to festival nights.<br /><span className="text-sm">厨房の炎から、お祭りの夜まで。</span></p>
         </div>
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {gallery.map((g, i) => (

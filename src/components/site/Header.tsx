@@ -51,12 +51,11 @@ export function Header() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="tel:0582403113"
+            <CallButton
               className="inline-flex items-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-4 py-2 text-sm font-semibold text-[oklch(0.20_0.05_155)] shadow-md shadow-black/20 hover:bg-[oklch(0.82_0.13_85)] transition"
             >
               <Phone className="h-4 w-4" /> 電話する
-            </a>
+            </CallButton>
           </nav>
 
           <button

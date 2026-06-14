@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X, Phone } from "lucide-react";
+import { CallButton } from "@/components/site/CallButton";
 
 const links = [
   { href: "#home", label: "Home" },

@@ -200,7 +200,7 @@ const branches: Branch[] = [
     phoneRaw: "0582403113",
     postal: "〒501-6002",
     address: "岐阜県羽島郡岐南町三宅5-3-9-103",
-    maps: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("岐阜県羽島郡岐南町三宅5-3-9-103 バングラキッチン"),
+    maps: "https://share.google/nBTM68SmzhxU7vZk6",
     uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 岐南"),
   },
   {

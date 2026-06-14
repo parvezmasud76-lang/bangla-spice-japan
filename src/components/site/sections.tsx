@@ -100,7 +100,7 @@ export function About() {
           />
           <div className="absolute -bottom-6 -right-4 sm:-right-8 hidden sm:block bg-[oklch(0.20_0.05_155)] text-white rounded-2xl gold-border p-5 max-w-[220px] shadow-xl">
             <div className="font-display text-3xl gold-text">SPICIA</div>
-            <div className="text-xs tracking-widest uppercase text-white/70">合同会社 · Since</div>
+            <div className="text-xs tracking-widest uppercase text-white/70">合同会社 · Since 2019</div>
           </div>
         </div>
 

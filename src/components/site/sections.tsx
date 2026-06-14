@@ -5,6 +5,8 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { CallButton } from "@/components/site/CallButton";
+import { OrderButton } from "@/components/site/OrderButton";
+
 
 import hero from "@/assets/hero.jpg";
 import biryani from "@/assets/biryani.jpg";
@@ -188,12 +190,14 @@ export function Services() {
 
 /* ---------------- LOCATIONS ---------------- */
 type Branch = {
+  key: "ginan" | "komaki";
   name: string; sub: string; phone: string; phoneRaw: string;
   postal: string; address: string;
-  maps: string; uber: string;
+  maps: string;
 };
 const branches: Branch[] = [
   {
+    key: "ginan",
     name: "バングラキッチン岐南店",
     sub: "本店 · Ginan Main Branch",
     phone: "058-240-3113",
@@ -201,9 +205,9 @@ const branches: Branch[] = [
     postal: "〒501-6002",
     address: "岐阜県羽島郡岐南町三宅5-3-9-103",
     maps: "https://share.google/nBTM68SmzhxU7vZk6",
-    uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 岐南"),
   },
   {
+    key: "komaki",
     name: "バングラキッチン小牧店",
     sub: "Komaki Branch",
     phone: "0568-48-7670",
@@ -211,9 +215,9 @@ const branches: Branch[] = [
     postal: "〒485-0012",
     address: "愛知県小牧市間々原新田1900-1",
     maps: "https://share.google/0A134NXl71s3DCkZK",
-    uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 小牧"),
   },
 ];
+
 
 const hoursWeekday = [
   ["モーニング", "9:00 – 11:00"],
@@ -286,9 +290,8 @@ export function Locations() {
                   <a href={b.maps} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-1 rounded-xl bg-[oklch(0.78_0.13_85)] text-[oklch(0.20_0.05_155)] py-3 text-xs sm:text-sm font-medium hover:opacity-90">
                     <MapPin className="h-4 w-4" /> Google Maps
                   </a>
-                  <a href={b.uber} target="_blank" rel="noopener noreferrer" className="flex flex-col items-center justify-center gap-1 rounded-xl bg-foreground text-background py-3 text-xs sm:text-sm font-medium hover:opacity-90">
-                    <ShoppingBag className="h-4 w-4" /> Uber Eats
-                  </a>
+                  <OrderButton branch={b.key} />
+
                 </div>
               </div>
             </article>

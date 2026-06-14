@@ -100,7 +100,7 @@ export function About() {
           />
           <div className="absolute -bottom-6 -right-4 sm:-right-8 hidden sm:block bg-[oklch(0.20_0.05_155)] text-white rounded-2xl gold-border p-5 max-w-[220px] shadow-xl">
             <div className="font-display text-3xl gold-text">SPICIA</div>
-            <div className="text-xs tracking-widest uppercase text-white/70">合同会社 · Since</div>
+            <div className="text-xs tracking-widest uppercase text-white/70">合同会社 · Since 2019</div>
           </div>
         </div>
 
@@ -200,7 +200,7 @@ const branches: Branch[] = [
     phoneRaw: "0582403113",
     postal: "〒501-6002",
     address: "岐阜県羽島郡岐南町三宅5-3-9-103",
-    maps: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("岐阜県羽島郡岐南町三宅5-3-9-103 バングラキッチン"),
+    maps: "https://share.google/nBTM68SmzhxU7vZk6",
     uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 岐南"),
   },
   {
@@ -210,7 +210,7 @@ const branches: Branch[] = [
     phoneRaw: "0568487670",
     postal: "〒485-0012",
     address: "愛知県小牧市間々原新田1900-1",
-    maps: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("愛知県小牧市間々原新田1900-1 バングラキッチン"),
+    maps: "https://share.google/0A134NXl71s3DCkZK",
     uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 小牧"),
   },
 ];

@@ -210,7 +210,7 @@ const branches: Branch[] = [
     phoneRaw: "0568487670",
     postal: "〒485-0012",
     address: "愛知県小牧市間々原新田1900-1",
-    maps: "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent("愛知県小牧市間々原新田1900-1 バングラキッチン"),
+    maps: "https://share.google/0A134NXl71s3DCkZK",
     uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 小牧"),
   },
 ];

@@ -59,12 +59,11 @@ export function Hero() {
               <Store className="h-5 w-5" /> 店舗を見る
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a
-              href="tel:0582403113"
+            <CallButton
               className="inline-flex items-center justify-center gap-2 rounded-full gold-border bg-white/5 px-7 py-4 text-base font-semibold text-white backdrop-blur hover:bg-white/10 transition"
             >
               <Phone className="h-5 w-5 text-[oklch(0.85_0.14_85)]" /> 電話する
-            </a>
+            </CallButton>
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-4 sm:gap-8 max-w-md">

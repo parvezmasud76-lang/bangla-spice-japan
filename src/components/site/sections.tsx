@@ -4,6 +4,7 @@ import {
   Store, ChefHat, Sparkles, Mail, Send, ArrowRight,
 } from "lucide-react";
 import { toast } from "sonner";
+import { CallButton } from "@/components/site/CallButton";
 
 import hero from "@/assets/hero.jpg";
 import biryani from "@/assets/biryani.jpg";
@@ -58,12 +59,11 @@ export function Hero() {
               <Store className="h-5 w-5" /> 店舗を見る
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
-            <a
-              href="tel:0582403113"
+            <CallButton
               className="inline-flex items-center justify-center gap-2 rounded-full gold-border bg-white/5 px-7 py-4 text-base font-semibold text-white backdrop-blur hover:bg-white/10 transition"
             >
               <Phone className="h-5 w-5 text-[oklch(0.85_0.14_85)]" /> 電話する
-            </a>
+            </CallButton>
           </div>
 
           <div className="mt-12 grid grid-cols-3 gap-4 sm:gap-8 max-w-md">
@@ -427,9 +427,9 @@ export function Catering() {
             <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:bg-[oklch(0.82_0.13_85)]">
               Request a Quote <ArrowRight className="h-4 w-4" />
             </a>
-            <a href="tel:0582403113" className="inline-flex items-center justify-center gap-2 rounded-full gold-border bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">
+            <CallButton className="inline-flex items-center justify-center gap-2 rounded-full gold-border bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">
               <Phone className="h-4 w-4" /> 電話する
-            </a>
+            </CallButton>
           </div>
         </div>
         <div className="hidden lg:block relative">
@@ -539,9 +539,9 @@ export function Contact() {
             >
               <Send className="h-4 w-4" /> {busy ? "Sending…" : "Send Inquiry"}
             </button>
-            <a href="tel:0582403113" className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:opacity-90">
+            <CallButton className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:opacity-90">
               <Phone className="h-4 w-4" /> Call Now
-            </a>
+            </CallButton>
           </div>
         </form>
       </div>

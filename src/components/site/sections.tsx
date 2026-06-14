@@ -4,6 +4,7 @@ import {
   Store, ChefHat, Sparkles, Mail, Send, ArrowRight,
 } from "lucide-react";
 import { toast } from "sonner";
+import { CallButton } from "@/components/site/CallButton";
 
 import hero from "@/assets/hero.jpg";
 import biryani from "@/assets/biryani.jpg";

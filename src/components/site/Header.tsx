@@ -82,12 +82,11 @@ export function Header() {
                 {l.label}
               </a>
             ))}
-            <a
-              href="tel:0582403113"
+            <CallButton
               className="mt-3 mb-2 inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-4 py-3 text-sm font-semibold text-[oklch(0.20_0.05_155)]"
             >
               <Phone className="h-4 w-4" /> 電話する
-            </a>
+            </CallButton>
           </nav>
         </div>
       )}

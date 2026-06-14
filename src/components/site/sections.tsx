@@ -5,6 +5,8 @@ import {
 } from "lucide-react";
 import { toast } from "sonner";
 import { CallButton } from "@/components/site/CallButton";
+import { OrderButton } from "@/components/site/OrderButton";
+
 
 import hero from "@/assets/hero.jpg";
 import biryani from "@/assets/biryani.jpg";

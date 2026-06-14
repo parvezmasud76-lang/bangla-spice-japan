@@ -539,9 +539,9 @@ export function Contact() {
             >
               <Send className="h-4 w-4" /> {busy ? "Sending…" : "Send Inquiry"}
             </button>
-            <a href="tel:0582403113" className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:opacity-90">
+            <CallButton className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:opacity-90">
               <Phone className="h-4 w-4" /> Call Now
-            </a>
+            </CallButton>
           </div>
         </form>
       </div>

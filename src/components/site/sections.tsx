@@ -427,9 +427,9 @@ export function Catering() {
             <a href="#contact" className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:bg-[oklch(0.82_0.13_85)]">
               Request a Quote <ArrowRight className="h-4 w-4" />
             </a>
-            <a href="tel:0582403113" className="inline-flex items-center justify-center gap-2 rounded-full gold-border bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">
+            <CallButton className="inline-flex items-center justify-center gap-2 rounded-full gold-border bg-white/5 px-7 py-3.5 text-sm font-semibold text-white hover:bg-white/10">
               <Phone className="h-4 w-4" /> 電話する
-            </a>
+            </CallButton>
           </div>
         </div>
         <div className="hidden lg:block relative">

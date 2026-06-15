@@ -17,9 +17,21 @@ import naan from "@/assets/naan.jpg";
 import jalebi from "@/assets/jalebi.jpg";
 import drinks from "@/assets/drinks.jpg";
 import groceryAsset from "@/assets/grocery-store.png.asset.json";
-const grocery = groceryAsset.url;
 import restaurantAsset from "@/assets/restaurant-spread.jpg.asset.json";
+import curryMenuAsset from "@/assets/curry-menu.png.asset.json";
+import biryaniMenuAsset from "@/assets/biryani-menu.png.asset.json";
+import naanMenuAsset from "@/assets/naan-menu.png.asset.json";
+import tandooriMenuAsset from "@/assets/tandoori-menu.png.asset.json";
+import samosaMenuAsset from "@/assets/samosa-menu.png.asset.json";
+import drinksMenuAsset from "@/assets/drinks-menu.png.asset.json";
+const grocery = groceryAsset.url;
 const restaurant = restaurantAsset.url;
+const curryMenu = curryMenuAsset.url;
+const biryaniMenu = biryaniMenuAsset.url;
+const naanMenu = naanMenuAsset.url;
+const tandooriMenu = tandooriMenuAsset.url;
+const samosaMenu = samosaMenuAsset.url;
+const drinksMenu = drinksMenuAsset.url;
 import event from "@/assets/event.jpg";
 import cateringImg from "@/assets/catering.jpg";
 
@@ -304,13 +316,13 @@ export function Locations() {
 
 /* ---------------- MENU ---------------- */
 const menu = [
-  { key: "Curry", jp: "カレー", img: curry, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
-  { key: "Biryani", jp: "ビリヤニ", img: biryani, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
-  { key: "Naan", jp: "ナン", img: naan, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
-  { key: "Tandoori", jp: "タンドリー", img: tandoori, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
-  { key: "Samosa", jp: "サモサ", img: samosa, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
+  { key: "Curry", jp: "カレー", img: curryMenu, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
+  { key: "Biryani", jp: "ビリヤニ", img: biryaniMenu, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
+  { key: "Naan", jp: "ナン", img: naanMenu, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
+  { key: "Tandoori", jp: "タンドリー", img: tandooriMenu, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
+  { key: "Samosa", jp: "サモサ", img: samosaMenu, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
   { key: "Jalebi", jp: "ジャレビ", img: jalebi, desc: "Crisp golden swirls soaked in fragrant saffron-cardamom syrup.", descJp: "サフランとカルダモンのシロップに浸した、黄金色の伝統スイーツ。" },
-  { key: "Drinks", jp: "ドリンク", img: drinks, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
+  { key: "Drinks", jp: "ドリンク", img: drinksMenu, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
 ];
 
 export function MenuSection() {

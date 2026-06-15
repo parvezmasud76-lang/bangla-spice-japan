@@ -29,15 +29,19 @@ export function Footer() {
 
           <div>
             <h4 className="font-display text-lg gold-text">Follow</h4>
-            <div className="mt-4 flex gap-3">
+            <div className="mt-4 flex flex-wrap gap-3">
               {[
-                { Icon: Instagram, label: "Instagram", href: "#" },
-                { Icon: Facebook, label: "Facebook", href: "#" },
-                { Icon: MessageCircle, label: "LINE", href: "#" },
+                { Icon: Instagram, label: "Instagram", href: "https://www.instagram.com/bangla_._kitchen?igsh=bDU4c3JrZDdtcmti" },
+                { Icon: Facebook, label: "Facebook Page", href: "https://www.facebook.com/share/1cFKnbHL2v/" },
+                { Icon: Facebook, label: "Facebook Profile", href: "https://www.facebook.com/share/1BNNWDmhjz/" },
+                { Icon: TikTokIcon, label: "TikTok", href: "https://www.tiktok.com/@bangla_._kitchen?_r=1&_t=ZS-97Ezpd5KbUW" },
+                { Icon: MessageCircle, label: "LINE", href: "https://lin.ee/pUi0kdI" },
               ].map(({ Icon, label, href }) => (
                 <a
                   key={label}
                   href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={label}
                   className="grid h-11 w-11 place-items-center rounded-full gold-border text-[oklch(0.85_0.14_85)] hover:bg-[oklch(0.78_0.13_85)] hover:text-[oklch(0.20_0.05_155)] transition"
                 >

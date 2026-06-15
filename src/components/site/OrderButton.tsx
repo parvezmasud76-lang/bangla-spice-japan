@@ -13,14 +13,14 @@ type Props = {
 const links = {
   ginan: {
     name: "バングラキッチン岐南店 · Ginan",
-    uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 岐南"),
-    demae: "https://demae-can.com/search/?keyword=" + encodeURIComponent("Bangla Kitchen 岐南"),
+    uber: "https://www.ubereats.com/store-browse-uuid/0e9f860e-259d-5678-9a32-8d89bc8e76f7?diningMode=DELIVERY",
+    demae: "https://demae-can.com/shop/menu/3304470",
     rocket: "https://rocketnow.jp/search?q=" + encodeURIComponent("Bangla Kitchen 岐南"),
   },
   komaki: {
     name: "バングラキッチン小牧店 · Komaki",
-    uber: "https://www.ubereats.com/jp/search?q=" + encodeURIComponent("Bangla Kitchen 小牧"),
-    demae: "https://demae-can.com/search/?keyword=" + encodeURIComponent("Bangla Kitchen 小牧"),
+    uber: "https://www.ubereats.com/store-browse-uuid/9b4a5573-4895-43d7-8eed-5d94a4a9015b?diningMode=DELIVERY",
+    demae: "https://demae-can.com/shop/menu/3280922",
     rocket: "https://rocketnow.jp/search?q=" + encodeURIComponent("Bangla Kitchen 小牧"),
   },
 };

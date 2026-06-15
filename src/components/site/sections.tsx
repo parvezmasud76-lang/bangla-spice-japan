@@ -316,13 +316,13 @@ export function Locations() {
 
 /* ---------------- MENU ---------------- */
 const menu = [
-  { key: "Curry", jp: "カレー", img: curry, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
-  { key: "Biryani", jp: "ビリヤニ", img: biryani, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
-  { key: "Naan", jp: "ナン", img: naan, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
-  { key: "Tandoori", jp: "タンドリー", img: tandoori, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
-  { key: "Samosa", jp: "サモサ", img: samosa, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
+  { key: "Curry", jp: "カレー", img: curryMenu, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
+  { key: "Biryani", jp: "ビリヤニ", img: biryaniMenu, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
+  { key: "Naan", jp: "ナン", img: naanMenu, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
+  { key: "Tandoori", jp: "タンドリー", img: tandooriMenu, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
+  { key: "Samosa", jp: "サモサ", img: samosaMenu, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
   { key: "Jalebi", jp: "ジャレビ", img: jalebi, desc: "Crisp golden swirls soaked in fragrant saffron-cardamom syrup.", descJp: "サフランとカルダモンのシロップに浸した、黄金色の伝統スイーツ。" },
-  { key: "Drinks", jp: "ドリンク", img: drinks, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
+  { key: "Drinks", jp: "ドリンク", img: drinksMenu, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
 ];
 
 export function MenuSection() {

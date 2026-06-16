@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 import {
   Phone, MapPin, ShoppingBag, UtensilsCrossed, Package, CalendarHeart,
   Store, ChefHat, Sparkles, Mail, Send, ArrowRight,
@@ -488,18 +489,28 @@ export function Contact() {
   const [form, setForm] = useState({ name: "", phone: "", email: "", message: "" });
   const [busy, setBusy] = useState(false);
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name.trim() || !form.message.trim()) {
+    const name = form.name.trim();
+    const message = form.message.trim();
+    if (!name || !message) {
       toast.error("Please enter your name and message.");
       return;
     }
     setBusy(true);
-    setTimeout(() => {
-      setBusy(false);
-      setForm({ name: "", phone: "", email: "", message: "" });
-      toast.success("Inquiry sent. We'll get back to you shortly. ありがとうございます！");
-    }, 700);
+    const { error } = await supabase.from("contact_inquiries").insert({
+      name: name.slice(0, 100),
+      phone: form.phone.trim() ? form.phone.trim().slice(0, 30) : null,
+      email: form.email.trim() ? form.email.trim().slice(0, 255) : null,
+      message: message.slice(0, 2000),
+    });
+    setBusy(false);
+    if (error) {
+      toast.error("Could not send. Please try again or call us directly.");
+      return;
+    }
+    setForm({ name: "", phone: "", email: "", message: "" });
+    toast.success("Inquiry received. We'll get back to you shortly. ありがとうございます！");
   };
 
   return (

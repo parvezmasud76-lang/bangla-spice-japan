@@ -17,22 +17,8 @@ import samosa from "@/assets/samosa.jpg";
 import naan from "@/assets/naan.jpg";
 import jalebi from "@/assets/jalebi.jpg";
 import drinks from "@/assets/drinks.jpg";
-import groceryAsset from "@/assets/grocery-store.png.asset.json";
-import restaurantAsset from "@/assets/restaurant-spread.jpg.asset.json";
-import curryMenuAsset from "@/assets/curry-menu.png.asset.json";
-import biryaniMenuAsset from "@/assets/biryani-menu.png.asset.json";
-import naanMenuAsset from "@/assets/naan-menu.png.asset.json";
-import tandooriMenuAsset from "@/assets/tandoori-menu.png.asset.json";
-import samosaMenuAsset from "@/assets/samosa-menu.png.asset.json";
-import drinksMenuAsset from "@/assets/drinks-menu.png.asset.json";
-const grocery = groceryAsset.url;
-const restaurant = restaurantAsset.url;
-const curryMenu = curryMenuAsset.url;
-const biryaniMenu = biryaniMenuAsset.url;
-const naanMenu = naanMenuAsset.url;
-const tandooriMenu = tandooriMenuAsset.url;
-const samosaMenu = samosaMenuAsset.url;
-const drinksMenu = drinksMenuAsset.url;
+import grocery from "@/assets/grocery.jpg";
+import restaurant from "@/assets/restaurant.jpg";
 import event from "@/assets/event.jpg";
 import cateringImg from "@/assets/catering.jpg";
 
@@ -207,7 +193,7 @@ type Branch = {
   name: string; sub: string; phone: string; phoneRaw: string;
   postal: string; address: string;
   maps: string;
-};
+|};
 const branches: Branch[] = [
   {
     key: "ginan",
@@ -317,13 +303,13 @@ export function Locations() {
 
 /* ---------------- MENU ---------------- */
 const menu = [
-  { key: "Curry", jp: "カレー", img: curryMenu, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
-  { key: "Biryani", jp: "ビリヤニ", img: biryaniMenu, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
-  { key: "Naan", jp: "ナン", img: naanMenu, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
-  { key: "Tandoori", jp: "タンドリー", img: tandooriMenu, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
-  { key: "Samosa", jp: "サモサ", img: samosaMenu, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
+  { key: "Curry", jp: "カレー", img: curry, desc: "Butter chicken, masala, dal & more — slow-cooked with hand-ground spices.", descJp: "バターチキン、マサラ、ダルなど。挽きたてスパイスでじっくり煮込みました。" },
+  { key: "Biryani", jp: "ビリヤニ", img: biryani, desc: "Fragrant basmati rice, saffron, tender halal meat in a sealed handi.", descJp: "香り高いバスマティライスとサフラン、柔らかなハラールミートを土鍋で蒸し上げ。" },
+  { key: "Naan", jp: "ナン", img: naan, desc: "Soft tandoor-baked naan — plain, garlic, butter or cheese.", descJp: "タンドール窯で焼き上げたふわふわのナン。プレーン・ガーリック・バター・チーズ。" },
+  { key: "Tandoori", jp: "タンドリー", img: tandoori, desc: "Chicken & seekh kebabs marinated overnight, fired in clay tandoor.", descJp: "一晩マリネしたチキンとシークケバブを、タンドール窯で香ばしく焼き上げ。" },
+  { key: "Samosa", jp: "サモサ", img: samosa, desc: "Crispy pastry stuffed with spiced potato, served with chutneys.", descJp: "スパイス香るポテトを包んだサクサクの揚げ生地。チャツネを添えて。" },
   { key: "Jalebi", jp: "ジャレビ", img: jalebi, desc: "Crisp golden swirls soaked in fragrant saffron-cardamom syrup.", descJp: "サフランとカルダモンのシロップに浸した、黄金色の伝統スイーツ。" },
-  { key: "Drinks", jp: "ドリンク", img: drinksMenu, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
+  { key: "Drinks", jp: "ドリンク", img: drinks, desc: "Mango lassi, masala chai, fresh juices & soft drinks.", descJp: "マンゴーラッシー、マサラチャイ、フレッシュジュース、各種ソフトドリンク。" },
 ];
 
 export function MenuSection() {
@@ -512,81 +498,3 @@ export function Contact() {
     setForm({ name: "", phone: "", email: "", message: "" });
     toast.success("Inquiry received. We'll get back to you shortly. ありがとうございます！");
   };
-
-  return (
-    <section id="contact" className="py-20 sm:py-28 bg-secondary/40">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-5 gap-10">
-        <div className="lg:col-span-2">
-          <span className="text-xs tracking-[0.25em] uppercase text-[oklch(0.55_0.12_85)]">Contact</span>
-          <h2 className="mt-3 font-display text-4xl sm:text-5xl text-[oklch(0.22_0.05_155)]">お問い合わせ</h2>
-          <p className="mt-4 text-muted-foreground">Reservations, catering, grocery orders or anything else — we'd love to hear from you.<br /><span className="text-sm">ご予約、ケータリング、食材のご注文など、お気軽にお問い合わせください。</span></p>
-
-          <div className="mt-8 space-y-4">
-            <a href="tel:0582403113" className="flex items-center gap-3 rounded-2xl bg-card p-4 ring-1 ring-border hover:ring-[oklch(0.78_0.13_85)] transition">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-[oklch(0.30_0.07_155)] text-[oklch(0.85_0.14_85)]"><Phone className="h-5 w-5" /></span>
-              <div><div className="text-sm text-muted-foreground">岐南店</div><div className="font-semibold">058-240-3113</div></div>
-            </a>
-            <a href="tel:0568487670" className="flex items-center gap-3 rounded-2xl bg-card p-4 ring-1 ring-border hover:ring-[oklch(0.78_0.13_85)] transition">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-[oklch(0.30_0.07_155)] text-[oklch(0.85_0.14_85)]"><Phone className="h-5 w-5" /></span>
-              <div><div className="text-sm text-muted-foreground">小牧店</div><div className="font-semibold">0568-48-7670</div></div>
-            </a>
-            <a href="mailto:info@spicia.co.jp" className="flex items-center gap-3 rounded-2xl bg-card p-4 ring-1 ring-border hover:ring-[oklch(0.78_0.13_85)] transition">
-              <span className="grid h-11 w-11 place-items-center rounded-full bg-[oklch(0.30_0.07_155)] text-[oklch(0.85_0.14_85)]"><Mail className="h-5 w-5" /></span>
-              <div><div className="text-sm text-muted-foreground">Email</div><div className="font-semibold">info@spicia.co.jp</div></div>
-            </a>
-          </div>
-        </div>
-
-        <form onSubmit={onSubmit} className="lg:col-span-3 rounded-3xl bg-card p-6 sm:p-8 ring-1 ring-border shadow-xl shadow-[oklch(0.22_0.05_155)]/5">
-          <div className="grid sm:grid-cols-2 gap-4">
-            <Field label="Name *" value={form.name} onChange={(v) => setForm({ ...form, name: v })} placeholder="お名前" />
-            <Field label="Phone" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} placeholder="090-0000-0000" type="tel" />
-          </div>
-          <div className="mt-4">
-            <Field label="Email" value={form.email} onChange={(v) => setForm({ ...form, email: v })} placeholder="you@example.com" type="email" />
-          </div>
-          <div className="mt-4">
-            <label className="text-sm font-medium">Message *</label>
-            <textarea
-              required
-              rows={5}
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              maxLength={2000}
-              placeholder="ご用件をご記入ください"
-              className="mt-1.5 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[oklch(0.78_0.13_85)]"
-            />
-          </div>
-          <div className="mt-6 flex flex-col sm:flex-row gap-3">
-            <button
-              type="submit"
-              disabled={busy}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.30_0.07_155)] px-7 py-3.5 text-sm font-semibold text-white hover:opacity-90 disabled:opacity-60"
-            >
-              <Send className="h-4 w-4" /> {busy ? "Sending…" : "Send Inquiry"}
-            </button>
-            <CallButton className="inline-flex items-center justify-center gap-2 rounded-full bg-[oklch(0.78_0.13_85)] px-7 py-3.5 text-sm font-semibold text-[oklch(0.20_0.05_155)] hover:opacity-90">
-              <Phone className="h-4 w-4" /> Call Now
-            </CallButton>
-          </div>
-        </form>
-      </div>
-    </section>
-  );
-}
-
-function Field(props: { label: string; value: string; onChange: (v: string) => void; placeholder?: string; type?: string }) {
-  return (
-    <div>
-      <label className="text-sm font-medium">{props.label}</label>
-      <input
-        type={props.type ?? "text"}
-        value={props.value}
-        maxLength={255}
-        onChange={(e) => props.onChange(e.target.value)}
-        placeholder={props.placeholder}
-        className="mt-1.5 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-[oklch(0.78_0.13_85)]"
-      />
-    </div>
-  );
-}

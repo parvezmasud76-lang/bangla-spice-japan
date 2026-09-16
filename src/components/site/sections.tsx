@@ -498,3 +498,4 @@ export function Contact() {
     setForm({ name: "", phone: "", email: "", message: "" });
     toast.success("Inquiry received. We'll get back to you shortly. ありがとうございます！");
   };
+}

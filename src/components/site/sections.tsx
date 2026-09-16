@@ -372,7 +372,18 @@ export function MenuSection() {
 }
 
 /* ---------------- GALLERY ---------------- */
+import galleryFood1 from "@/assets/gallery-food-1.jpg";
+import galleryFood2 from "@/assets/gallery-food-2.jpg";
+import galleryFood3 from "@/assets/gallery-food-3.jpg";
+import galleryFood4 from "@/assets/gallery-food-4.jpg";
+import galleryFood5 from "@/assets/gallery-food-5.jpg";
+
 const gallery = [
+  { src: galleryFood1, alt: "Naan and curry" },
+  { src: galleryFood2, alt: "Naan and curry" },
+  { src: galleryFood3, alt: "Naan and curry" },
+  { src: galleryFood4, alt: "Spicy fried chicken" },
+  { src: galleryFood5, alt: "Spiced rice and meatballs" },
   { src: restaurant, alt: "Restaurant interior" },
   { src: biryani, alt: "Chicken biryani" },
   { src: tandoori, alt: "Tandoori chicken" },

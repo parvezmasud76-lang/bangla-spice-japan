@@ -404,7 +404,7 @@ export function Gallery() {
         </div>
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
           {gallery.map((g, i) => (
-            <div key={i} className={`overflow-hidden rounded-2xl group ${i % 5 === 0 ? "row-span-2 aspect-square md:aspect-[1/2]" : "aspect-square"}`}>
+            <div key={i} className="overflow-hidden rounded-2xl group aspect-square">
               <img src={g.src} alt={g.alt} loading="lazy" width={800} height={800} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
             </div>
           ))}

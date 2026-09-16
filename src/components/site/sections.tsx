@@ -193,7 +193,7 @@ type Branch = {
   name: string; sub: string; phone: string; phoneRaw: string;
   postal: string; address: string;
   maps: string;
-|};
+};
 const branches: Branch[] = [
   {
     key: "ginan",
